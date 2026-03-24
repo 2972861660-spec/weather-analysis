@@ -542,7 +542,7 @@ if len(df_raw) > 0:
         
         st.dataframe(display_df, use_container_width=True, hide_index=True)
         
-        csv = df.to_csv(index=False, encoding='utf-8')
+        csv = df.to_csv(index=False, encoding='gbk')
         st.download_button(
             label="📥 导出完整数据 (CSV)",
             data=csv,
